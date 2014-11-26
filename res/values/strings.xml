@@ -30,17 +30,45 @@
     <string name="repasswordregister">RePassword: </string>
     <string name="nameregisterinput">Letter</string>
     <string name="emailregisterinput">user@domain</string>
-    <string name="passwordregisterinput">Letter/Number</string>
-    <string name="repasswordregisterinput">Letter/Number</string>
+    <string name="passwordregisterinput">Number</string>
+    <string name="repasswordregisterinput">Number</string>
     
     <string name="login">Login</string>
     <string name="namelogin">Name: </string>
     <string name="passwordlogin">Password: </string>
     <string name="namelogininput">Letter</string>
-    <string name="passwordlogininput">Letter/Number</string>
+    <string name="passwordlogininput">Number</string>
     
     <string name="sunxiaoxuan">SUN XIAOXUAN</string>
+    <string name="personalinformation">Personal information: </string>
     <string name="personalacademic">SUN XIAOXUAN</string>
+    <string name="gpa">GPA: </string>
+    <string name="toefl">TOEFL/IELTS:  </string>
+    <string name="gre">GRE:  </string>
+    <string name="targetcountry">Target Country:  </string>
+    <string name="masterphd">Master/PHD:  </string>
+    <string name="major">Major:  </string>
+    <string name="relax">~!Relax and go abroad!~  </string>
+    <string name="academicrank">University rankings:  </string> 
+    <string name="lastrank">Last rankings  </string> 
+
+    <string name="location">Location:  </string>
+    <string name="terrain">(1) Terrain:  </string>
+    <string name="district">(2) District:  </string>
+    <string name="tourism">(3) Tourism:  </string>
+    <string name="traffic">Traffic:  </string>
+    <string name="airport">Airport  </string>
+    <string name="train">Train  </string>
+    <string name="bus">Bus  </string>
+    <string name="expense">Expense($):  </string>
+    <string name="climate">Climate:  </string>
+    <string name="rainfall">(1) Annual rainfall:  </string>
+    <string name="temperaturea">(2) High temperature:  </string>
+    <string name="temperatureb">(3) Low temperature:  </string>
+    <string name="safety">Safety:  </string>
+    <string name="employment">Employment:  </string>
+    <string name="ps">PS: The employment and safety are according to the rankings of the universities.  </string>
+    
     
     <string name="homepagebutton">Home Page</string>
     <string name="assessbutton">Assess</string>
@@ -48,11 +76,11 @@
     <string name="registerbutton">Register</string>
     <string name="returnbutton">Return</string>
     <string name="nextpagebutton">Next Page</string>
-    <string name="enterbutton">Enter</string>
     <string name="storebutton">Store</string>
+    <string name="enterbutton">Enter</string>
     <string name="updatebutton">Update</string>
-    <string name="exitbutton">Exit</string>
+    <string name="exitbutton">Exit  </string>
+    <string name="rankbutton">Rank</string>
     <string name="moreinformationbutton">More information</string>
-    <string ></string>
 
 </resources>

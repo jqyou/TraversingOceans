@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="21" />
+        android:targetSdkVersion="19" />
 
     <application
         android:allowBackup="true"
@@ -14,13 +14,41 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.traversingoceans.MainActivity"
+            android:name="com.example.popup.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.example.popup.Academicinfo" >
+        </activity>
+        <activity android:name="com.example.popup.Academicrank" >
+        </activity>
+        <activity android:name="com.example.popup.Homepage" >
+        </activity>
+        <activity android:name="com.example.popup.Homepagetwo" >
+        </activity>
+        <activity android:name="com.example.popup.Login" >
+        </activity>
+        <activity android:name="com.example.popup.Moreinfo" >
+        </activity>
+        <activity android:name="com.example.popup.Moreinfotwo" >
+        </activity>
+        <activity android:name="com.example.popup.Personalpage" >
+        </activity>
+        <activity android:name="com.example.popup.Personalpagetwo" >
+        </activity>
+        <activity android:name="com.example.popup.Rankfinally" >
+        </activity>
+        <activity android:name="com.example.popup.Rankvisitor" >
+        </activity>
+        <activity android:name="com.example.popup.Register" >
+        </activity>
+        <activity android:name="com.example.popup.SXX" >
+        </activity>
+        <activity android:name="com.example.popup.Visitorassess" >
         </activity>
     </application>
 

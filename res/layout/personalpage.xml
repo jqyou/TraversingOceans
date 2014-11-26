@@ -16,16 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:text="@string/assessbutton"
-        android:textSize="13sp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/button1"
-        android:text="@string/exitbutton"
+        android:text="@string/enterbutton"
         android:textSize="13sp" />
 
     <TextView
@@ -37,15 +28,6 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="17dp"
         android:text="@string/sunxiaoxuan" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/textView1"
-        android:text="@string/nextpagebutton"
-        android:textSize="13sp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -138,5 +120,33 @@
         android:layout_marginTop="16dp"
         android:text="@string/contenth"
         android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/nextpagebutton"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_toLeftOf="@+id/button3"
+        android:text="@string/assessbutton"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_toRightOf="@+id/button1"
+        android:text="@string/exitbutton"
+        android:textSize="13sp" />
     
 </RelativeLayout>

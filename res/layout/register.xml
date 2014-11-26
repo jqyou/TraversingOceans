@@ -1,56 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-    
-    <ImageView
-        android:contentDescription="@string/app_name"
-        android:id="@+id/imageView1"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:src="@drawable/beijingtu" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="28dp"
-        android:text="@string/enterbutton"
-        android:textSize="20sp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/button1"
-        android:layout_marginLeft="17dp"
-        android:layout_toRightOf="@+id/button1"
-        android:text="@string/returnbutton"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="92dp"
-        android:text="@string/passwordregister"
-        android:textColor="#ffffff"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/textView2"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="36dp"
-        android:text="@string/emailregister"
-        android:textColor="#ffffff"
-        android:textSize="20sp" />
+    android:layout_height="match_parent"
+    android:background="@drawable/beijingtu" >
 
     <TextView
         android:id="@+id/textView5"
@@ -61,7 +13,7 @@
         android:layout_marginTop="34dp"
         android:text="@string/repasswordregister"
         android:textColor="#ffffff"
-        android:textSize="20sp" />
+        android:textSize="25sp" />
 
     <TextView
         android:id="@+id/textView1"
@@ -71,7 +23,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="52dp"
         android:text="@string/register"
-        android:textSize="30sp"
+        android:textSize="32sp"
         android:typeface="serif" />
 
     <EditText
@@ -87,18 +39,6 @@
 
         <requestFocus />
     </EditText>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="21dp"
-        android:layout_toLeftOf="@+id/textView1"
-        android:text="@string/nameregister"
-        android:textColor="#ffffff"
-        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/editText2"
@@ -131,5 +71,48 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="@string/nameregisterinput" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/enterbutton"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="39dp"
+        android:layout_toLeftOf="@+id/textView1"
+        android:text="@string/nameregister"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/editText4"
+        android:layout_marginTop="19dp"
+        android:text="@string/emailregister"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_centerVertical="true"
+        android:text="@string/passwordregister"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
     
 </RelativeLayout>
