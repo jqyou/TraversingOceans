@@ -21,7 +21,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.traversingoceans.R;
@@ -32,6 +31,7 @@ public class Login extends Activity {
 	private String username;
 	private String userpwd;
 	private JSONArray record;
+	private Storage storage;
 
 	// products JSONArray
 	// JSONArray result = null;
@@ -94,13 +94,14 @@ public class Login extends Activity {
 					Toast.makeText(getApplicationContext(),
 							"UserName or Password is not Right!",
 							Toast.LENGTH_SHORT).show();
-					
+
 				} else {
 					Intent intent = new Intent();
 					intent.setClass(Login.this, SXX.class);
 					Login.this.startActivity(intent);
-					Toast.makeText(getApplicationContext(),
-							"Login success!",
+					storage = (Storage) getApplication();
+					storage.set_user_name(username);
+					Toast.makeText(getApplicationContext(), "Login success!",
 							Toast.LENGTH_SHORT).show();
 
 				}
