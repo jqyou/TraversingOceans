@@ -28,7 +28,7 @@ import com.example.traversingoceans.R;
 
 public class Visitorassess extends Activity {
 
-	private String URL_PATH = "http://1.traversingoceans.sinaapp.com/api/search";
+	private String URL_PATH = "http://1.traversingoceans.sinaapp.com/index.php/api/search";
 	private String GPA;
 	private String TI;
 	private String GRE;
@@ -52,7 +52,7 @@ public class Visitorassess extends Activity {
 		spinner2 = (Spinner) findViewById(R.id.spinner2);
 		spinner3 = (Spinner) findViewById(R.id.spinner3);
 
-		// ½«¿ÉÑ¡ÄÚÈİÓëArrayAdapterÁ¬½ÓÆğÀ´
+		// ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ArrayAdapterï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		adapter1 = new ArrayAdapter<String>(this,
 				android.R.layout.simple_spinner_item, target);
 		adapter2 = new ArrayAdapter<String>(this,
@@ -60,17 +60,17 @@ public class Visitorassess extends Activity {
 		adapter3 = new ArrayAdapter<String>(this,
 				android.R.layout.simple_spinner_item, major);
 
-		// ÉèÖÃÏÂÀ­ÁĞ±íµÄ·ç¸ñ
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ±ï¿½Ä·ï¿½ï¿½
 		adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-		// ½«adapter Ìí¼Óµ½spinnerÖĞ
+		// ï¿½ï¿½adapter ï¿½ï¿½Óµï¿½spinnerï¿½ï¿½
 		spinner1.setAdapter(adapter1);
 		spinner2.setAdapter(adapter2);
 		spinner3.setAdapter(adapter3);
 
-		// ÉèÖÃÄ¬ÈÏÖµ
+		// ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½Öµ
 		spinner1.setVisibility(View.VISIBLE);
 		spinner2.setVisibility(View.VISIBLE);
 		spinner3.setVisibility(View.VISIBLE);
@@ -118,12 +118,12 @@ public class Visitorassess extends Activity {
 		// onPostExecute displays the results of the AsyncTask.
 		@Override
 		protected void onPostExecute(String result) {
-			Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT)
-					.show();
-			/*
-			 * Intent intent = new Intent(); intent.setClass(Visitorassess.this,
-			 * Rankvisitor.class); Visitorassess.this.startActivity(intent);
-			 */
+			/*Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT)
+					.show();*/
+			
+			 Intent intent = new Intent(); intent.setClass(Visitorassess.this,
+			 Rankvisitor.class); Visitorassess.this.startActivity(intent);
+			 
 		}
 	}
 
@@ -136,10 +136,10 @@ public class Visitorassess extends Activity {
 			URL url = new URL(myurl);
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 			conn.setRequestMethod("POST");
-			conn.setDoOutput(true);
-			conn.setDoInput(true);
-			conn.setConnectTimeout(10000);
-			conn.setReadTimeout(10000);
+			conn.setDoOutput(true);//appåˆ°æœåŠ¡å™¨
+			conn.setDoInput(true);//æœåŠ¡å™¨åˆ°app
+			conn.setConnectTimeout(10000);//10ç§’ä¸­å»ºç«‹è¿æ¥
+			conn.setReadTimeout(10000);//è¯»å–æ•°æ®
 			conn.setUseCaches(false);
 			conn.setInstanceFollowRedirects(true);
 			conn.setRequestProperty("charset", "utf-8");
@@ -163,7 +163,7 @@ public class Visitorassess extends Activity {
 
 			out.write(content.toString().getBytes());
 			out.flush();
-			out.close();
+			out.close();//åœ¨æœåŠ¡å™¨ç«¯å†™ä¸Špostå‡½æ•°ï¼Œæ¥æ”¶ä»appåˆ°æœåŠ¡å™¨ç«¯çš„ä¸œè¥¿
 
 			is = conn.getInputStream();
 			String contentAsString = readIt(is, len);
